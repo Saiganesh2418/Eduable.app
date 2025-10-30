@@ -1,0 +1,161 @@
+{
+ "arsc_lib_version": "1.2.5",
+ "package_id": 127,
+ "package_name": "org.chromium.webapk.a91c24fa1e69aa68a_v2",
+ "specs": [
+  {"spec": {"id": 1}},
+  {"spec": {
+   "id": 2,
+   "spec_flags": [{
+    "id": 0,
+    "flag": 256
+   }]
+  }},
+  {"spec": {"id": 3}},
+  {"spec": {
+   "id": 4,
+   "spec_flags": [
+    {
+     "id": 9,
+     "flag": 8192
+    },
+    {
+     "id": 10,
+     "flag": 8192
+    },
+    {
+     "id": 11,
+     "flag": 8192
+    }
+   ]
+  }},
+  {"spec": {
+   "id": 5,
+   "spec_flags": [
+    {
+     "id": 0,
+     "flag": 256
+    },
+    {
+     "id": 2,
+     "flag": 256
+    },
+    {
+     "id": 3,
+     "flag": 256
+    },
+    {
+     "id": 4,
+     "flag": 256
+    },
+    {
+     "id": 5,
+     "flag": 256
+    },
+    {
+     "id": 6,
+     "flag": 256
+    },
+    {
+     "id": 7,
+     "flag": 256
+    }
+   ]
+  }},
+  {"spec": {"id": 6}},
+  {"spec": {"id": 7}},
+  {"spec": {
+   "id": 8,
+   "spec_flags": [
+    {
+     "id": 0,
+     "flag": 4
+    },
+    {
+     "id": 1,
+     "flag": 4
+    },
+    {
+     "id": 2,
+     "flag": 4
+    },
+    {
+     "id": 3,
+     "flag": 4
+    },
+    {
+     "id": 4,
+     "flag": 4
+    },
+    {
+     "id": 5,
+     "flag": 4
+    },
+    {
+     "id": 6,
+     "flag": 4
+    },
+    {
+     "id": 7,
+     "flag": 4
+    },
+    {
+     "id": 8,
+     "flag": 4
+    },
+    {
+     "id": 9,
+     "flag": 4
+    },
+    {
+     "id": 10,
+     "flag": 4
+    },
+    {
+     "id": 11,
+     "flag": 4
+    },
+    {
+     "id": 12,
+     "flag": 4
+    },
+    {
+     "id": 13,
+     "flag": 4
+    },
+    {
+     "id": 14,
+     "flag": 4
+    },
+    {
+     "id": 15,
+     "flag": 4
+    },
+    {
+     "id": 16,
+     "flag": 4
+    },
+    {
+     "id": 17,
+     "flag": 4
+    },
+    {
+     "id": 18,
+     "flag": 4
+    },
+    {
+     "id": 19,
+     "flag": 4
+    }
+   ]
+  }},
+  {"spec": {
+   "id": 9,
+   "spec_flags": [{
+    "id": 1,
+    "flag": 1024
+   }]
+  }},
+  {"spec": {"id": 10}}
+ ]
+}

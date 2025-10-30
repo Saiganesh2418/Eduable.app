@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<manifest android:versionCode="1"
+          android:versionName="1"
+          android:compileSdkVersion="36"
+          android:compileSdkVersionCodename="Baklava"
+          package="org.chromium.webapk.a91c24fa1e69aa68a_v2"
+          platformBuildVersionCode="36"
+          platformBuildVersionName="Baklava" xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-sdk android:minSdkVersion="24"
+            android:targetSdkVersion="33" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.VIEW" />
+      <category android:name="android.intent.category.BROWSABLE" />
+      <data android:scheme="https" />
+    </intent>
+    <intent>
+      <action android:name="android.support.customtabs.action.ACTION_MANAGE_TRUSTED_WEB_ACTIVITY_DATA" />
+      <data android:scheme="https" />
+    </intent>
+  </queries>
+  <application android:label="@string/short_name"
+               android:icon="@mipmap/ic_launcher"
+               android:allowBackup="false"
+               android:supportsRtl="true">
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity"
+              android:exported="true"
+              android:excludeFromRecents="true"
+              android:relinquishTaskIdentity="true">
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https"
+              android:host="eduable-25.base44.app"
+              android:pathPrefix="" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="https"
+              android:host="eduable-25.base44.app"
+              android:pathPrefix="" />
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="org.chromium.webapk.shell_apk.ManageDataLauncherActivity" />
+    <activity android:theme="@style/SplashTheme"
+              android:name="org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity"
+              android:enabled="@bool/opaque_main_activity_enabled_default"
+              android:exported="true"
+              android:screenOrientation="user"
+              android:relinquishTaskIdentity="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="android.app.shortcuts"
+                 android:resource="@xml/shortcuts" />
+    </activity>
+    <activity android:theme="@style/SplashTheme"
+              android:name="org.chromium.webapk.shell_apk.h2o.SplashActivity"
+              android:launchMode="singleTask"
+              android:screenOrientation="user" />
+    <provider android:name="org.chromium.webapk.shell_apk.h2o.SplashContentProvider"
+              android:exported="true"
+              android:authorities="org.chromium.webapk.a91c24fa1e69aa68a_v2.SplashContentProvider" />
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="org.chromium.webapk.shell_apk.h2o.H2OMainActivity"
+              android:enabled="@bool/transparent_main_activity_enabled_default"
+              android:exported="true"
+              android:excludeFromRecents="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="android.app.shortcuts"
+                 android:resource="@xml/shortcuts" />
+    </activity>
+    <activity android:theme="@style/PermissionRequestTheme"
+              android:name="org.chromium.webapk.shell_apk.NotificationPermissionRequestActivity" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.shellApkVersion"
+               android:value="181" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.runtimeHost"
+               android:value="com.android.chrome" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.runtimeHostApplicationName"
+               android:value="Chrome" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.startUrl"
+               android:value="https://eduable-25.base44.app/" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.scope"
+               android:value="https://eduable-25.base44.app/" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.displayMode"
+               android:value="standalone" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.orientation"
+               android:value="" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.themeColor"
+               android:value="-16777216L" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.darkThemeColor"
+               android:value="" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.backgroundColor"
+               android:value="-1L" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.darkBackgroundColor"
+               android:value="" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.defaultBackgroundColorId"
+               android:resource="@color/webapp_default_bg" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.iconId"
+               android:resource="@mipmap/app_icon" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.splashId"
+               android:resource="@drawable/splash_icon" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.isSplashIconMaskableBooleanId"
+               android:resource="@bool/is_splash_icon_maskable" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.distributor"
+               android:value="browser" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.iconUrlsAndIconMurmur2Hashes"
+               android:value="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68bab2813644271735462755/da50ed0cb_428b36130_IMG-20250811-WA0028.png 5284902802095722297" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.webManifestUrl"
+               android:value="https://eduable-25.base44.app/api/apps/manifests/68bab2813644271735462755/manifest.json" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.webManifestId"
+               android:value="https://eduable-25.base44.app/" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.appKey"
+               android:value="https://eduable-25.base44.app/" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.isNewStyleWebApk"
+               android:value="true" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.enableSiteSettingsShortcut"
+               android:value="true" />
+    <meta-data android:name="org.chromium.webapk.shell_apk.hasCustomName"
+               android:value="false" />
+    <service android:name="org.chromium.webapk.shell_apk.WebApkServiceFactory"
+             android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.WEBAPK_API" />
+      </intent-filter>
+    </service>
+    <service android:name="org.chromium.webapk.shell_apk.IdentityService"
+             android:exported="true">
+      <intent-filter>
+        <action android:name="org.webapk.IDENTITY_SERVICE_API" />
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
